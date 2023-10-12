@@ -1,3 +1,5 @@
+Certainly, here's your `README.md` content with the corrected image paths:
+
 ```markdown
 # CRUD APP
 
@@ -9,7 +11,7 @@ An example project showcasing a full-stack web application using Prisma, NestJS,
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Screenshots](#screenshots)
-- [Backend (NestJS)](#backend-nestjs)
+- [server (NestJS)](#server-nestjs)
 - [Frontend (React with Vite)](#frontend-react-with-vite)
 - [Contributing](#contributing)
 - [License](#license)
@@ -33,28 +35,30 @@ To get started, follow these steps:
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/jonathan-demlie/mono-crud-app.git
+   git clone https://github.com/jonathan-demlie/mono-crud-app.git
    cd mono-crud-app
-   ```bash
+   ```
 
 2. Install dependencies:
 
    ```bash
-   $ cd backend/
+   cd server/
    npm install
 
-   cd /api
+   cd api
    npm install
    ```
-```bash
-create or update .env file on roo directory of mono-crud-app
-DATABASE_URL=mysql://root:root@localhost:3306/crud
-```bash
+
+   Create or update a `.env` file in the root directory of `mono-crud-app` with the following content:
+
+   ```plaintext
+   DATABASE_URL=mysql://root:root@localhost:3306/crud
+   ```
 
 3. Start the backend (NestJS) server:
 
    ```bash
-   ~/backend$
+   ~/server$
    npm run start
    ```
 
@@ -65,10 +69,10 @@ DATABASE_URL=mysql://root:root@localhost:3306/crud
    npm run dev
    ```
 
-   ## Database
+## Database
 
 ```bash
-$ cd backend
+$ cd server
 $ npm install -g @nestjs/cli
 $ nest new prisma
 $ cd prisma
@@ -77,22 +81,20 @@ $ npx prisma
 
 $ npx prisma init
 
-$ npx prisma migrate dev --users init  // you can change users by your favorite name
+$ npx prisma migrate dev --users init  // you can change "users" to your preferred name
 
 $ npm install @prisma/client
 
 DATABASE_URL=mysql://root:root@localhost:3306/crud
-
-```bash
-
-frontend api http://localhost:5173/
-backend http://localhost:3000/api/v1/users
-
-
-## Backend (NestJS)
 ```
-```
-The backend of this project is built with NestJS and uses Prisma to interact with the database. Here's a brief overview of the backend structure:
+
+Frontend API: [http://localhost:5173/](http://localhost:5173/)
+
+server: [http://localhost:3000/api/v1/users](http://localhost:3000/api/v1/users)
+
+## Server (NestJS)
+
+The server of this project is built with NestJS and uses Prisma to interact with the database. Here's a brief overview of the server structure:
 
 - API routes defined in `src/users/controller`
 - Data models and database schema in `src/users/module`
@@ -101,8 +103,7 @@ The backend of this project is built with NestJS and uses Prisma to interact wit
 For more details on NestJS and Prisma, refer to their respective documentation.
 
 ## Frontend (React with Vite)
-```
-```
+
 The frontend is built using React and Vite as the build tool. Key features include:
 
 - React Query for efficient data fetching
@@ -110,8 +111,7 @@ The frontend is built using React and Vite as the build tool. Key features inclu
 - Component-based structure in the `src/components` directory
 
 Explore the frontend code to learn more about how React, React Query, and Vite are used in this project.
-```
-```
+
 ## Screenshots
 
 ![Screenshot 1](api/screenshots/screenshot1.png)
@@ -120,14 +120,12 @@ Explore the frontend code to learn more about how React, React Query, and Vite a
 
 ![Screenshot 3](api/screenshots/screenshot3.png)
 
-![Screenshot 3](api/screenshots/screenshot4.png)
+![Screenshot 4](api/screenshots/screenshot4.png)
 
-![Screenshot 3](api/screenshots/screenshot5.png)
+![Screenshot 5](api/screenshots/screenshot5.png)
 
 ## Contributing
 
-```
-```
 Contributions are welcome! If you have ideas or improvements, feel free to open issues and submit pull requests.
 
 ## License
@@ -135,4 +133,4 @@ Contributions are welcome! If you have ideas or improvements, feel free to open 
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Feel free to customize this README with your project-specific details and make it as detailed as you need.
+Make sure you've placed your `README.md` in the root of your Git repository, and your image files are in the correct relative paths as shown in the `Screenshots` section. Adjust paths if your actual project structure is different.
