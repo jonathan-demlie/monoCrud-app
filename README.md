@@ -48,7 +48,7 @@ To get started, follow these steps:
    cd api
    npm install
    ```
-
+ 
    Create or update a `.env` file in the root directory of `mono-crud-app` with the following content:
 
    ```plaintext
@@ -87,6 +87,10 @@ $ npm install @prisma/client
 
 DATABASE_URL=mysql://root:root@localhost:3306/crud
 ```
+## mysql db
+$ mysql -u root -p
+-> CREATE DATABASE crud;
+-> user crud;
 
 Frontend API: [http://localhost:5173/](http://localhost:5173/)
 

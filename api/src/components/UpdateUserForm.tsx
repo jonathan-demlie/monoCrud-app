@@ -65,7 +65,6 @@ const UpdateUserForm: React.FC<UpdateUserFormProps> = ({ user, onUpdate, onClose
 >
   <Input />
 </Form.Item>
-
       <Form.Item>
         <Button type="primary" htmlType="submit">
           Update User

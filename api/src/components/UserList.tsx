@@ -88,7 +88,6 @@ const UserList: React.FC = () => {
       </Button>
      </div>
       <Table dataSource={users} columns={columns} rowKey="id" />
-
       {isCreateModalVisible && (
         <Modal
           title="Create User"
